@@ -1,0 +1,154 @@
+
+/* to keep all deafult padding and margin to zero */
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* header styling */
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: palegoldenrod;
+    color: blue;
+    border-radius: 0.4px solid white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+/* styling of the links */
+a{
+    color: #120536;
+    font-size: x-large;
+    text-decoration: none;
+  
+   
+}
+
+/* Generarl content styling to set a layout for the over page */
+main{
+    padding: 10px;
+    border: 10px solid red;
+    margin: 20px;
+    background-color: #73f89f;
+    
+}
+
+/* styling of the h1 element */
+main nav h1{
+    color: indigo;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid rgb(154, 144, 7);
+    border-radius: 20px;
+    font-size: x-large;
+    margin-bottom: 0px;
+    background-color: rgb(193, 66, 243);
+    
+}
+
+/* Styling of the  */
+.Management{
+    
+    background: rgb(251, 211, 162);
+    border-radius: 20px;
+    background-color: rgb(229, 245, 229);
+}
+
+/* giving general setting for the three boxes in the flex section */
+.management-team{
+    
+    margin: 20px, 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+/* Styling of the three boxes */
+
+.director, .chief-engineer, .project-manager{
+   
+    border: 3px solid #491ef5;t
+    /* border-radius: 10px;
+    padding: 15px;
+   
+    min-height: 100px; */
+    
+    
+}
+
+/* Grid layout styling begins */
+
+/* giving general padding to the content of each column */
+.part1,.part2,.part3,.part4,.part5,.part6,.part7,.part8,.part9 {
+    padding: 20px;
+    
+}
+
+/* This is the styling code that set the grid section to grid tyoe layout */
+.gridlayout{
+    /* background: #eee; */
+    display: grid;
+    justify-content: space-evenly;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px,auto);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+
+
+/* i set every odd number column to have a different color from the even nubered column for easy readability*/
+.gridlayout > div:nth-child(odd){
+    background: #047f2d;
+    border-radius: 20px;
+}
+.gridlayout > div:nth-child(even){
+    background: hsl(73, 54%, 31%);
+    border-radius: 20px;
+
+}
+
+/* Styling of links to the other pages */
+nav > a{
+    background-color: rgb(152, 152, 240);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+a:hover{
+    color: goldenrod;
+}
+
+/* STYLING OF IMAGES IN THE 3 BY 3 GRID LAYOUT  */
+div > img{
+   border-radius: 10px;
+}
+
+/* styling the h1 in the grid layout i.e. "our activities" section */
+h1{
+    text-align: center;
+    border: 2px solid linen;
+    border-radius: 10px;
+    background-color: gold;
+    margin-top: 20px;
+}
+
+/* Footer section styling */
+footer{
+    background-color: rgb(245, 222, 222);
+    text-align: center;
+    /* align-items: center; */
+
+}
